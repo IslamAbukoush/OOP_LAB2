@@ -1,4 +1,4 @@
-package org.example.task1and2;
+package org.example.task123;
 
 public class PumpkinSpiceLatte extends Cappuccino{
     private Integer mgOfPumpkinSpice;
@@ -12,5 +12,10 @@ public class PumpkinSpiceLatte extends Cappuccino{
     public void printDetails() {
         super.printDetails();
         System.out.println("Pumpkin Spice: "+mgOfPumpkinSpice+" mg");
+    }
+
+    public final void makePumpkinSpiceLatte() {
+        super.makeCappuccino();
+        System.out.println("Adding " + mgOfPumpkinSpice + " mg of pumpkin spice");
     }
 }

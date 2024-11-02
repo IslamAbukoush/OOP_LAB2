@@ -1,4 +1,4 @@
-package org.example.task1and2;
+package org.example.task123;
 
 public class SyrupCappuccino extends Cappuccino{
     protected SyrupType syrup;
@@ -20,5 +20,10 @@ public class SyrupCappuccino extends Cappuccino{
     public void printDetails() {
         super.printDetails();
         System.out.println("Syrup: "+syrup);
+    }
+
+    public final void makeSyrupCappuccino() {
+        super.makeCappuccino();
+        System.out.println("Adding " + syrup + " syrup");
     }
 }

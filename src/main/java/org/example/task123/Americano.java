@@ -1,4 +1,4 @@
-package org.example.task1and2;
+package org.example.task123;
 
 public class Americano extends Coffee {
     private final Integer mlOfWater;
@@ -17,5 +17,10 @@ public class Americano extends Coffee {
     public void printDetails() {
         super.printDetails();
         System.out.println("Water: " + mlOfWater + " ml");
+    }
+
+    public final void makeAmericano() {
+        super.makeCoffee();
+        System.out.println("Adding " + mlOfWater + " mls of water");
     }
 }

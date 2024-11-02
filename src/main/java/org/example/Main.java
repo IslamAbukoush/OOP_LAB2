@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.task1and2.Cappuccino;
-import org.example.task1and2.Coffee;
-import org.example.task1and2.SyrupCappuccino;
+import org.example.task123.Cappuccino;
+import org.example.task123.Coffee;
+import org.example.task123.SyrupCappuccino;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,5 +10,7 @@ public class Main {
         SyrupCappuccino mySyrupCappuccino = new SyrupCappuccino(Coffee.Intensity.STRONG, 100, SyrupCappuccino.SyrupType.CARAMEL);
         myCappuccino.printDetails();
         mySyrupCappuccino.printDetails();
+        myCappuccino.makeCappuccino();
+        mySyrupCappuccino.makeSyrupCappuccino();
     }
 }

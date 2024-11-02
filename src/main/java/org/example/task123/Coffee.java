@@ -1,4 +1,4 @@
-package org.example.task1and2;
+package org.example.task123;
 
 public class Coffee {
     String name;
@@ -27,5 +27,10 @@ public class Coffee {
     public void printDetails() {
         System.out.println("======["+this.name+"]======");
         System.out.println("Intensity: "+coffeeIntensity);
+    }
+
+    public void makeCoffee() {
+        System.out.println("Making " + name);
+        System.out.println("Intensity is set to " + coffeeIntensity);
     }
 }
