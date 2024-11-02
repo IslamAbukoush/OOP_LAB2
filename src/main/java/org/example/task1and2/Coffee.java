@@ -1,4 +1,4 @@
-package org.example.task1;
+package org.example.task1and2;
 
 public class Coffee {
     String name;
@@ -22,5 +22,10 @@ public class Coffee {
 
     public String getName() {
         return name;
+    }
+
+    public void printDetails() {
+        System.out.println("======["+this.name+"]======");
+        System.out.println("Intensity: "+coffeeIntensity);
     }
 }

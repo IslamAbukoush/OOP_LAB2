@@ -1,4 +1,4 @@
-package org.example.task1;
+package org.example.task1and2;
 
 public class SyrupCappuccino extends Cappuccino{
     protected SyrupType syrup;
@@ -14,5 +14,11 @@ public class SyrupCappuccino extends Cappuccino{
         super(intensity, mlOfMilk);
         this.name = "SyrupCappuccino";
         this.syrup = syrup;
+    }
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Syrup: "+syrup);
     }
 }

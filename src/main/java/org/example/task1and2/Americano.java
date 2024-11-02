@@ -1,4 +1,4 @@
-package org.example.task1;
+package org.example.task1and2;
 
 public class Americano extends Coffee {
     private final Integer mlOfWater;
@@ -11,5 +11,11 @@ public class Americano extends Coffee {
 
     public Integer getMlOfWater() {
         return mlOfWater;
+    }
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Water: " + mlOfWater + " ml");
     }
 }
