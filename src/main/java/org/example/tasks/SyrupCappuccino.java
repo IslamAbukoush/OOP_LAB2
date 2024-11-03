@@ -1,6 +1,6 @@
-package org.example.task123;
+package org.example.tasks;
 
-public class SyrupCappuccino extends Cappuccino{
+class SyrupCappuccino extends Cappuccino{
     protected SyrupType syrup;
     public enum SyrupType {
         MACADAMIA,
@@ -22,8 +22,9 @@ public class SyrupCappuccino extends Cappuccino{
         System.out.println("Syrup: "+syrup);
     }
 
-    public final void makeSyrupCappuccino() {
+    public final SyrupCappuccino makeSyrupCappuccino() {
         super.makeCappuccino();
-        System.out.println("Adding " + syrup + " syrup");
+        System.out.println("▶ Adding " + syrup + " syrup");
+        return this;
     }
 }

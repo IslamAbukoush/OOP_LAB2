@@ -1,6 +1,6 @@
-package org.example.task123;
+package org.example.tasks;
 
-public class Cappuccino extends Coffee {
+class Cappuccino extends Coffee {
     private final Integer mlOfMilk;
 
     public Cappuccino(Intensity intensity, Integer mlOfMilk) {
@@ -19,8 +19,9 @@ public class Cappuccino extends Coffee {
         System.out.println("Milk: "+mlOfMilk+" ml");
     }
 
-    public void makeCappuccino() {
+    public final Cappuccino makeCappuccino() {
         super.makeCoffee();
-        System.out.println("Adding " + mlOfMilk + " mls of milk");
+        System.out.println("▶ Adding " + mlOfMilk + " mls of milk");
+        return this;
     }
 }

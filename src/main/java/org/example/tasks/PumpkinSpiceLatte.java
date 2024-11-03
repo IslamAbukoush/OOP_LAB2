@@ -1,6 +1,6 @@
-package org.example.task123;
+package org.example.tasks;
 
-public class PumpkinSpiceLatte extends Cappuccino{
+class PumpkinSpiceLatte extends Cappuccino{
     private Integer mgOfPumpkinSpice;
     public PumpkinSpiceLatte(Intensity intensity, Integer mlOfMilk, Integer mgOfPumpkinSpice) {
         super(intensity, mlOfMilk);
@@ -14,8 +14,9 @@ public class PumpkinSpiceLatte extends Cappuccino{
         System.out.println("Pumpkin Spice: "+mgOfPumpkinSpice+" mg");
     }
 
-    public final void makePumpkinSpiceLatte() {
+    public final PumpkinSpiceLatte makePumpkinSpiceLatte() {
         super.makeCappuccino();
-        System.out.println("Adding " + mgOfPumpkinSpice + " mg of pumpkin spice");
+        System.out.println("▶ Adding " + mgOfPumpkinSpice + " mg of pumpkin spice");
+        return this;
     }
 }

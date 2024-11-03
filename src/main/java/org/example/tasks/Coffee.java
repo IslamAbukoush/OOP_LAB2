@@ -1,6 +1,6 @@
-package org.example.task123;
+package org.example.tasks;
 
-public class Coffee {
+class Coffee {
     String name;
     Intensity coffeeIntensity;
 
@@ -29,8 +29,9 @@ public class Coffee {
         System.out.println("Intensity: "+coffeeIntensity);
     }
 
-    public void makeCoffee() {
-        System.out.println("Making " + name);
-        System.out.println("Intensity is set to " + coffeeIntensity);
+    public final Coffee makeCoffee() {
+        System.out.println("▶ Making " + name);
+        System.out.println("▶ Intensity is set to " + coffeeIntensity);
+        return this;
     }
 }
