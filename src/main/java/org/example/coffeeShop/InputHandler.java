@@ -1,5 +1,4 @@
-package org.example.tasks;
-
+package org.example.coffeeShop;
 import java.util.Scanner;
 
 public class InputHandler {

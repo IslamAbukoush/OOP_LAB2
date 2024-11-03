@@ -1,8 +1,8 @@
-package org.example.tasks;
+package org.example.coffeeShop;
 
 class Coffee {
-    String name;
-    Intensity coffeeIntensity;
+    protected String name;
+    private final Intensity coffeeIntensity;
 
     public enum Intensity {
         LIGHT,

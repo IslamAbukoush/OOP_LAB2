@@ -1,7 +1,7 @@
-package org.example.tasks;
+package org.example.coffeeShop;
 
 class SyrupCappuccino extends Cappuccino{
-    protected SyrupType syrup;
+    private final SyrupType syrup;
     public enum SyrupType {
         MACADAMIA,
         VANILLA,

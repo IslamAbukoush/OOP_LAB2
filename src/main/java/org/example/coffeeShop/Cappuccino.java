@@ -1,4 +1,4 @@
-package org.example.tasks;
+package org.example.coffeeShop;
 
 class Cappuccino extends Coffee {
     private final Integer mlOfMilk;

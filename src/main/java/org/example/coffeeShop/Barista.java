@@ -1,7 +1,6 @@
-package org.example.tasks;
+package org.example.coffeeShop;
 
-import static org.example.tasks.InputHandler.getChoice;
-import static org.example.tasks.InputHandler.getIntInRange;
+import static org.example.coffeeShop.InputHandler.*;
 
 public class Barista {
     private final String[] drinks = {"Coffee", "Americano", "Cappuccino", "Pumpkin Spice Latte", "Syrup Cappuccino"};

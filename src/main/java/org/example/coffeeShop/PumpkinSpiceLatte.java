@@ -1,7 +1,7 @@
-package org.example.tasks;
+package org.example.coffeeShop;
 
 class PumpkinSpiceLatte extends Cappuccino{
-    private Integer mgOfPumpkinSpice;
+    private final Integer mgOfPumpkinSpice;
     public PumpkinSpiceLatte(Intensity intensity, Integer mlOfMilk, Integer mgOfPumpkinSpice) {
         super(intensity, mlOfMilk);
         this.name = "SyrupCappuccino";
