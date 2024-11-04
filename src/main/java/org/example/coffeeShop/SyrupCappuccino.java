@@ -1,15 +1,10 @@
 package org.example.coffeeShop;
 
+import org.example.coffeeShop.enums.Intensity;
+import org.example.coffeeShop.enums.SyrupType;
+
 class SyrupCappuccino extends Cappuccino{
     private final SyrupType syrup;
-    public enum SyrupType {
-        MACADAMIA,
-        VANILLA,
-        COCONUT,
-        CARAMEL,
-        CHOCOLATE,
-        POPCORN
-    }
     public SyrupCappuccino(Intensity intensity, Integer mlOfMilk, SyrupType syrup) {
         super(intensity, mlOfMilk);
         this.name = "SyrupCappuccino";
