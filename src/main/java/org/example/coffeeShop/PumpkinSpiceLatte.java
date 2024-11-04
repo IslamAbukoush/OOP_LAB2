@@ -1,5 +1,7 @@
 package org.example.coffeeShop;
 
+import org.example.coffeeShop.enums.Intensity;
+
 class PumpkinSpiceLatte extends Cappuccino{
     private final Integer mgOfPumpkinSpice;
     public PumpkinSpiceLatte(Intensity intensity, Integer mlOfMilk, Integer mgOfPumpkinSpice) {
